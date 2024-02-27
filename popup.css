@@ -1,0 +1,153 @@
+body {
+	width: 300px;
+	height: 500px;
+	padding: 10px;
+	margin: 0;
+	color: #000000;
+	background: linear-gradient(45deg, #ffb4ff, #b87aff, #b3ffff, #8cff82);
+	background-size: 400% 400%;
+	animation: bodyGradientChange 10s ease infinite;
+}
+
+@keyframes bodyGradientChange {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#title_bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+#title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	margin: 10px 0;
+}
+
+#githubBtn {
+	border-radius: 0px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+#list {
+	height: 380px;
+	width: 300px;
+	margin: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#list::-webkit-scrollbar {
+	width: 10px;
+}
+
+#list::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+#list::-webkit-scrollbar-thumb {
+	background-color: rgb(158, 61, 158);
+	border-radius: 4px;
+}
+
+#list::-webkit-scrollbar-thumb:hover {
+	background-color: purple;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding: 4px;
+	border: black 1px solid;
+	border-radius: 5px;
+	margin: 4px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.filepath {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.row:hover {
+	background-color: #f0f0f06e;
+	cursor: pointer;
+}
+
+.search_class {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#search {
+	width: 60%;
+	padding: 10px;
+	margin: 10px 0;
+	border-radius: 5px;
+	border: 1px solid #000000;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#search:focus {
+	outline: none;
+}
+
+#search::placeholder {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#searchBtn {
+	width: 30%;
+	padding: 10px;
+	margin: 10px 0;
+	border-radius: 5px;
+	border: 1px solid #000000;
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#searchBtn:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+#searchBtn:focus {
+	outline: none;
+}
+
+#searchBtn:active {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+#ll {
+	font-size: 15rem;
+	font-weight: bold;
+	text-align: center;
+	color: red;
+}

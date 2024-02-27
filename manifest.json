@@ -1,0 +1,24 @@
+{
+	"name": "Download GIF",
+	"version": "1.0",
+	"description": "Download GIF as GIF insead of webm",
+	"permissions": ["downloads", "storage", "activeTab", "contextMenus"],
+	"icons": {
+		"16": "icon.png",
+		"48": "icon.png",
+		"128": "icon.png"
+	},
+	"action": {
+		"default_icon": {
+			"16": "icon.png",
+			"48": "icon.png",
+			"128": "icon.png"
+		},
+		"default_title": "GIF Downloader",
+		"default_popup": "popup.html"
+	},
+	"background": {
+		"service_worker": "background.js"
+	},
+	"manifest_version": 3
+}
